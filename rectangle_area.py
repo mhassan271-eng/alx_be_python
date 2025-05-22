@@ -1,5 +1,3 @@
-# rectangle_area.py
-
 length = 10
 width = 5
 
