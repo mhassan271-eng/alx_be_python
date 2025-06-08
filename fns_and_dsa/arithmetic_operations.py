@@ -1,4 +1,4 @@
-def perform_operation(num1, num2, operation):
+def perform_operation(num1: float, num2: float, operation: str):
     match operation:
         case 'add':
             return num1 + num2
@@ -11,7 +11,5 @@ def perform_operation(num1, num2, operation):
                 return "Error: Division by zero is not allowed."
             return num1 / num2
         case _:
-            return "Error: Invalid operation specified."
-
-
+            return "Invalid operation specified."
 
