@@ -6,7 +6,7 @@ def display_current_datetime():
 
 def calculate_future_date():
     try:
-        # لازم تكون الجملة دي بالضبط حرفيًا
+        # لازم الجملة تبقى حرفيًا كده
         days_to_add = int(input("Enter the number of days to add to the 
 current date: "))
     except ValueError:
@@ -17,9 +17,6 @@ current date: "))
     return future_date.strftime("%Y-%m-%d")
 
 if __name__ == "__main__":
-    current = display_current_datetime()
-    print("Current date and time:", current)
-
-    future = calculate_future_date()
-    print("Future date:", future)
+    print("Current date and time:", display_current_datetime())
+    print("Future date:", calculate_future_date())
 
