@@ -10,7 +10,7 @@ class Book:
 class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
-        self.file_size = file_size  # بالميجابايت
+        self.file_size = file_size   بالميجابايت
 
     def __str__(self):
         return f"{self.title} by {self.author} [E-Book, {self.file_size} MB]"
@@ -35,4 +35,5 @@ class Library:
     def list_books(self):
         for book in self.books:
             print(book)
+
 
